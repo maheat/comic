@@ -55,11 +55,16 @@ button:hover {
 
 /* Mobile screens (phones and smaller devices) */
 /* Style the comic container */
-
+.comic-container {
+    display: flex; /* Display images side by side on desktop */
+    justify-content: space-between; /* Create space between images */
+    overflow-x: auto; /* Enable horizontal scrolling on small screens */
+    white-space: nowrap; /* Prevent wrapping of images */
+}
 
 /* Style each comic image */
 .comic-image {
-    flex: 0 0 60%; /* Allow images to take up roughly half of the container width */
+    flex: 0 0 49%; /* Allow images to take up roughly half of the container width */
     max-width: 49%; /* Set a maximum width for each image */
     margin-right: 1%; /* Create a small gap between images */
 }
