@@ -40,7 +40,7 @@ img{
 
 .flaticon-button {
     position: absolute;
-    background-image: url("right-arrow.png"); /* Replace with the actual path to the icon */
+    background-image: url("/images/right-arrow.png"); /* Replace with the actual path to the icon */
     bottom: 10px; /* Adjust this value to control the distance from the bottom */
     right: 10px; /* Adjust this value to control the distance from the right */
     background-size: contain;
