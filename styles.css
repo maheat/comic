@@ -66,14 +66,13 @@ img{
     transform: scaleX(-1);
 }
 /* Mobile screens (phones and smaller devices) */
-@media only screen and (min-width: 1025px) {
-    .mobile-only {
-        flex-direction: column;
-        display:none !important;
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Stack images in a single column on small screens */
     }
-} 
-@media only screen and (max-width: 1026px) {
-    .desktop-only {
-        display:none !important;
+
+    .container {
+        max-width: 100%; /* Allow containers to take up the full width */
+        margin: 10px 0; /* Adjust margin to separate containers vertically */
     }
-} 
+}
