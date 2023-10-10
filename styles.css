@@ -17,7 +17,7 @@ body {
     max-height: 100%;
     /* padding-bottom: 100%; 1:1 Aspect Ratio (height = width) */
     background-color: #ffffff;
-    margin: 10px; /* Space between the containers */
+    /* margin: 10px;  Space between the containers */
     display: flex;
     align-items: center;
     justify-content: center;
