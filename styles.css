@@ -59,7 +59,7 @@ button:hover {
 
 /* Style each comic image */
 .comic-image {
-    flex: 0 0 49%; /* Allow images to take up roughly half of the container width */
+    flex: 0 0 60%; /* Allow images to take up roughly half of the container width */
     max-width: 49%; /* Set a maximum width for each image */
     margin-right: 1%; /* Create a small gap between images */
 }
