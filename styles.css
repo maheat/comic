@@ -72,7 +72,7 @@ img{
     }
 
     .container {
-        max-width: 60%; /* Allow containers to take up the full width */
+        max-width: 75%; /* Allow containers to take up the full width */
         margin: 10px 0; /* Adjust margin to separate containers vertically */
     }
 }
