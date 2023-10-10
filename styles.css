@@ -75,4 +75,9 @@ img{
         max-width: 85%; /* Allow containers to take up the full width */
         margin: 10px 0; /* Adjust margin to separate containers vertically */
     }
+    /* Adjust the button size for mobile */
+    .flaticon-button {
+        width: 30px; /* Adjust the width for mobile */
+        height: 30px; /* Adjust the height for mobile */
+    }
 }
