@@ -55,13 +55,14 @@ button:hover {
 
 /* Mobile screens (phones and smaller devices) */
 @media (max-width: 768px) {
-    .h1 {
-        font-size: 20px; /* Adjust font size for readability */
-    }
-
-    .container {
-        max-width: 80%; /* Reduce container width for mobile screens */
-        max-height: auto; /* Allow the height to adjust based on content */
-        font-size: 18px; /* Adjust font size for readability */
-    }
+    @media only screen and (min-width: 1025px) {
+        .mobile-only {
+            display:none !important;
+        }
+    } 
+    @media only screen and (max-width: 1026px) {
+        .desktop-only {
+            display:none !important;
+        }
+    } 
 }
