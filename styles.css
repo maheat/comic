@@ -54,15 +54,26 @@ button:hover {
 
 
 /* Mobile screens (phones and smaller devices) */
+/* Style the comic container */
+
+
+/* Style each comic image */
+.comic-image {
+    flex: 0 0 49%; /* Allow images to take up roughly half of the container width */
+    max-width: 49%; /* Set a maximum width for each image */
+    margin-right: 1%; /* Create a small gap between images */
+}
+
+/* Media query for mobile screens */
 @media (max-width: 768px) {
-    @media only screen and (min-width: 1025px) {
-        .mobile-only {
-            display:none !important;
-        }
-    } 
-    @media only screen and (max-width: 1026px) {
-        .desktop-only {
-            display:none !important;
-        }
-    } 
+    .comic-container {
+        flex-direction: column; /* Stack images in a single column on small screens */
+        overflow-x: hidden; /* Hide horizontal scroll on small screens */
+    }
+
+    .comic-image {
+        flex: 1; /* Allow images to take up the full width of the container */
+        max-width: 100%; /* Set the maximum width to 100% */
+        margin-right: 0; /* Remove the gap between images */
+    }
 }
