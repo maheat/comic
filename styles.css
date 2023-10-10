@@ -1,0 +1,67 @@
+.h1{
+    color: black;
+    font-size: 40px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+    background-color: #f0f0f0; /* Background color for the body */
+}
+
+.container {
+    max-width: 50%; /* Adjust the width as needed */
+    max-height: 10%;
+    /* padding-bottom: 100%; 1:1 Aspect Ratio (height = width) */
+    background-color: #3498db;
+    margin: 10px; /* Space between the containers */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    border: 2px solid #3498db; /* Add a border for better visibility */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.2s ease-in-out; /* Add a hover effect */
+}
+img{
+    height: 100%;
+    width: 100%
+}
+
+/* .container:hover {
+    transform: scale(0.8s); /* Scale up the container on hover 
+} */
+
+button {
+    display: inline-block; /* Display the button as an inline-block element */
+    padding: 10px 20px; /* Add padding to create space inside the button */
+    background-color:brown; /* Background color */
+    color: white; /* Text color */
+    border: none; /* Remove the default button border */
+    border-radius: 4px; /* Add rounded corners */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    font-size: 20px; /* Font size */
+    text-align: center; /* Center the text horizontally */
+    text-decoration: none; /* Remove underlines from links */
+}
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.2);
+}
+
+
+/* Mobile screens (phones and smaller devices) */
+@media (max-width: 768px) {
+    .h1 {
+        font-size: 20px; /* Adjust font size for readability */
+    }
+
+    .container {
+        max-width: 80%; /* Reduce container width for mobile screens */
+        max-height: auto; /* Allow the height to adjust based on content */
+        font-size: 18px; /* Adjust font size for readability */
+    }
+}
