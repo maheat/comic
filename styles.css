@@ -13,10 +13,28 @@ body {
 
 .container {
     position: relative;
-    max-width: 50%; /* Adjust the width as needed */
-    max-height: 10%;
+    max-width: 100%; /* Adjust the width as needed */
+    max-height: 100%;
     /* padding-bottom: 100%; 1:1 Aspect Ratio (height = width) */
-    background-color: #3498db;
+    background-color: #ffffff;
+    margin: 10px; /* Space between the containers */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    border: 2px solid #3498db; /* Add a border for better visibility */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.2s ease-in-out; /* Add a hover effect */
+    z-index: 1;
+   
+}
+.container {
+    position: relative;
+    max-width: 100%; /* Adjust the width as needed */
+    max-height: 100%;
+    /* padding-bottom: 100%; 1:1 Aspect Ratio (height = width) */
+    background-color: #ffffff;
     margin: 10px; /* Space between the containers */
     display: flex;
     align-items: center;
@@ -30,8 +48,9 @@ body {
    
 }
 img{
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: 50%;
+    margin: 10px; 
 }
 
 /* .container:hover {
@@ -40,9 +59,8 @@ img{
 
 .flaticon-button {
     position: absolute;
-    background-image: url("/images/right-arrow.png"); /* Replace with the actual path to the icon */
-    bottom: 10px; /* Adjust this value to control the distance from the bottom */
-    right: 10px; /* Adjust this value to control the distance from the right */
+    background-image: url("images/right-arrow.png"); /* Replace with the actual path to the icon */
+    
     background-size: contain;
     background-repeat: no-repeat;
     width: 50px; /* Adjust the width and height as needed */
@@ -51,7 +69,20 @@ img{
     cursor: pointer;
     z-index: 2;
 }
+/* Style for positioning "Next" button to the lower right corner */
+.flaticon-button.next {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
 
+/* Style for positioning "Previous" button to the lower left corner */
+.flaticon-button.previous {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    transform: scaleX(-1); /* fliiping the next button */
+}
 /* Mobile screens (phones and smaller devices) */
 @media only screen and (min-width: 1025px) {
     .mobile-only {
