@@ -181,6 +181,8 @@ img{
 @media (max-width: 768px) {
     body {
         flex-direction: column; /* Stacking images in a single column on small screens */
+        align-items: center;
+        justify-content: center;
     }
 
     .container {
@@ -189,8 +191,12 @@ img{
     }
     /* Adjust the button size for mobile */
     .flaticon-button {
-        width: 50px; 
-        height: 50px; 
+        width: 45px; 
+        height: 45px; 
+    }
+    .reload-button {
+        width: 45px; 
+        height: 45px; 
     }
 }
 
